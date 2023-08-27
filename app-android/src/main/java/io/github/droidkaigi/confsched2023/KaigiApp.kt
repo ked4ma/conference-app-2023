@@ -35,6 +35,7 @@ import io.github.droidkaigi.confsched2023.about.nestedAboutScreen
 import io.github.droidkaigi.confsched2023.contributors.ContributorsScreen
 import io.github.droidkaigi.confsched2023.contributors.ContributorsViewModel
 import io.github.droidkaigi.confsched2023.contributors.contributorsScreenRoute
+import io.github.droidkaigi.confsched2023.designsystem.strings.AppStrings
 import io.github.droidkaigi.confsched2023.designsystem.theme.KaigiTheme
 import io.github.droidkaigi.confsched2023.floormap.floorMapScreenRoute
 import io.github.droidkaigi.confsched2023.floormap.navigateFloorMapScreen
@@ -269,6 +270,7 @@ private class ExternalNavController(
     }
 
     fun navigateToLicenseScreen() {
+        OssLicensesMenuActivity.setActivityTitle(AppStrings.License.asString())
         context.startActivity(Intent(context, OssLicensesMenuActivity::class.java))
     }
 

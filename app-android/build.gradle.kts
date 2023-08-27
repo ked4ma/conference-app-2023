@@ -99,6 +99,7 @@ dependencies {
     implementation(libs.androidxBrowser)
     implementation(libs.androidxWindow)
     implementation(libs.kermit)
+    implementation(libs.androidxAppCompat)
     testImplementation(projects.core.testing)
 }
 
