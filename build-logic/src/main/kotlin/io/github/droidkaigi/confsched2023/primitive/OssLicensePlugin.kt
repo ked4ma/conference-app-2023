@@ -11,6 +11,7 @@ class OssLicensesPlugin : Plugin<Project> {
 
             dependencies {
                 implementation(libs.library("ossLicenses"))
+                implementation(libs.library("androidxAppCompat"))
             }
         }
     }
